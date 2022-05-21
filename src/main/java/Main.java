@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int f, n, m;
+
         Random rnd = new Random();
         List<Integer> list = new ArrayList<>();
         List<Integer> filteredList;
@@ -19,16 +19,16 @@ public class Main {
         logger.log("Просим пользователя ввести входные данные для списка");
 
         System.out.print("Введите размер списка: ");
-        n = Integer.parseInt(scanner.next());
+        int listSize = Integer.parseInt(scanner.next());
 
         System.out.print("Введите верхнюю границу значений элементов в списке: ");
-        m = Integer.parseInt(scanner.next());
+        int maxValue = Integer.parseInt(scanner.next());
 
         logger.log("Создаём и наполняем список");
 
         System.out.print("Вот случайный список:");
-        for (int i = 0; i < n; i++) {
-            list.add(rnd.nextInt(m));
+        for (int i = 0; i < listSize; i++) {
+            list.add(rnd.nextInt(maxValue));
             System.out.print(" " + list.get(list.size() - 1));
         }
         System.out.println();
@@ -36,9 +36,9 @@ public class Main {
         logger.log("Просим пользователя ввести входные данные для фильтрации");
 
         System.out.print("Введите пороговое число для фильтрации списка: ");
-        f = Integer.parseInt(scanner.next());
+        int thresholdValue = Integer.parseInt(scanner.next());
 
-        filter = new Filter(f);
+        filter = new Filter(thresholdValue);
 
         logger.log("Запускаем фильтрацию");
 
