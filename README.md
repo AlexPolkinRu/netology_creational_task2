@@ -101,3 +101,4 @@ public class Main {
 ```
 5. Для заполнения списка `ArrayList` случайными числами используйте генератор случайных чисел `Random random = new Random()` и его метод `random.nextInt(maxValue)`.
 6. Протестируйте работу программы. Не забывайте про правила форматирования кода (для автоформата можете выделить код в идее и нажать **Ctrl+Alt+L**).
+[![Alt text]([//placehold.it/150x100](https://skr.sh/i/210522/bQ8aeUpV.jpg?download=1&name=%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%88%D0%BE%D1%82%2021-05-2022%2023:22:05.jpg))](h[ttp://example.com/](https://skr.sh/i/210522/bQ8aeUpV.jpg?download=1&name=%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%88%D0%BE%D1%82%2021-05-2022%2023:22:05.jpg))
